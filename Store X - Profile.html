@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Store X - Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/logo.png">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div class="headBar">
+       
+        
+        <div class="storeName">  Store X   </div>
+
+        <div style="margin-top: 5%;">
+        
+            <div style="display:-webkit-inline-box;">
+                
+                <div class="category"> Drugs </div>
+                <div class="category"> Skincare </div>
+                <div class="category"> Supplements </div>
+                <div class="category"> Babies essentials </div>
+                <div class="category"> Medical devices </div>
+                <div class="category"> HomePage </div>
+            
+            </div>
+
+            <div class="iconCol">
+
+                <div class="icon"> <i class="glyphicon glyphicon-shopping-cart"></i> </div> 
+                
+                <div id="myOverlay" class="searchBnOverlay">
+                    <span class="searchClose" onclick="closeSearch()" title="Close searchBnOverlay">x</span>
+                    <div class=".searchOverlay-content">
+                    <form action="/action_page.php">
+                        <input class="searchInput" type="text" placeholder="Search.." name="search">
+                        <button class="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    </div>
+                </div>
+                
+            <div class="icon"> <button class="searchBtn" onclick="openSearch()"><i class="glyphicon glyphicon-search"></i></button> </div>
+            
+                <script>
+                    function openSearch() {
+                    document.getElementById("myOverlay").style.display = "block";
+                    }
+                    
+                    function closeSearch() {
+                    document.getElementById("myOverlay").style.display = "none";
+                    }
+                </script>
+
+            
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div style="font-size: 50pt; font-family: Garamond; margin-top: 5%; color: #292F33; margin-left: 3%;">My Account.</div>
+
+    <div style="text-align: center; font-size: 25pt; font-family: Lato; color: #292F33; margin-top: 7%;">Welcome, Username</div>
+    <div class="profileContianer">
+
+       
+        <div class="profileDetials">
+
+            <ul style=" list-style-type: none;">
+
+                <li>
+                    Name: User Name
+                </li>
+                <li>
+                    Number: 00962xxxxxxxx
+                </li>
+                <li>
+                    Address: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                    Password: 1234568
+                </li>
+
+            </ul>
+
+            <div class="profileInfo-edit">Edit info</div>
+
+        </div>
+        
+        <div class="profile-AboutUs">
+            
+            <h4 style="text-align: center;">About us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, doloribus amet. Porro enim quam illo doloribus reiciendis ea. Officiis incidunt doloremque soluta, suscipit asperiores necessitatibus sit distinctio recusandae dolores earum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque cum ab consequatur velit, omnis inventore ut dignissimos. Blanditiis quam, modi at molestiae nihil quas soluta nulla beatae provident odio.
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+    <br>
+
+    <div class="footer">
+        <p>Pharmacy is the clinical health science that links medical science with chemistry and it is charged with the discovery, production, disposal, safe and effective use, and control of medications and drugs.</p>
+    </div>        
+
+
+</body>
+
+</html>

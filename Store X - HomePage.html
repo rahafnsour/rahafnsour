@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Store X - HomePage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/logo.png">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="headBar">
+   
+        
+        
+        <div class="storeName">  Store X   </div>
+
+        <div style="margin-top: 5%;">
+            <div style="display:-webkit-inline-box;">
+
+                <div class="category"> Drugs </div>
+                <div class="category"> Skincare </div>
+                <div class="category"> Supplements </div>
+                <div class="category"> Babies essentials </div>
+                <div class="category"> Medical devices </div>
+                
+            
+            </div>
+
+            <div class="iconCol">
+
+                <div class="icon"> <i class="glyphicon glyphicon-user"></i> </div>
+                <div class="icon"> <i class="glyphicon glyphicon-shopping-cart"></i> </div> 
+                
+
+                    <div id="myOverlay" class="searchBnOverlay">
+                        <span class="searchClose" onclick="closeSearch()" title="Close searchBnOverlay">x</span>
+                        <div class=".searchOverlay-content">
+                        <form action="/action_page.php">
+                            <input class="searchInput" type="text" placeholder="Search.." name="search">
+                            <button class="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                        </div>
+                    </div>
+                    
+                <div class="icon"> <button class="searchBtn" onclick="openSearch()"><i class="glyphicon glyphicon-search"></i></button> </div>
+                
+                    <script>
+                        function openSearch() {
+                        document.getElementById("myOverlay").style.display = "block";
+                        }
+                        
+                        function closeSearch() {
+                        document.getElementById("myOverlay").style.display = "none";
+                        }
+                    </script>
+
+            </div>
+        </div>
+
+        <div>
+
+            <button class="registerButton" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Register</button>
+    
+            <div id="id01" class="modal">
+
+
+              <form class="modal-content" action="/action_page.php">
+
+                    <div class="container">
+                        <h1>Registration</h1>
+
+                        <p>Please fill in this form to create an account.</p>
+                        <hr>
+
+                        <label for="name"><b>Name</b></label>
+                        <input class="inputR" type="text" placeholder="Enter name" name="name" required>
+                        <br>
+                    
+                        <label for="num"><b>Phone Number</b></label>
+                        <input class="inputR" type="tel" placeholder="Enter Number" name="num" required>
+                        <br>
+
+                        <label for="address"><b>Address</b></label>
+                        <input class="inputR" type="text" placeholder="Enter Address" name="address" required>
+                        <br>
+
+                        <label for="password"><b>Password</b></label>
+                        <input class="inputR" type="text" placeholder="Enter Password" name="password" required>
+                        <br>
+
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                    
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                    
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelBtn">Cancel</button>
+                            <button type="submit" class="registerBtn">Register</button>
+                        </div>
+
+                    </div>
+
+              </form>
+
+            </div>
+            
+            <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+    
+        </div>
+
+    </div>
+
+
+    <div style="color: #d7eaf8; background-color: #d7eaf8;">l</div>
+
+    <div class="imgNArrHPcontaner">
+        
+        <img src="img/new arr.jfif" alt="New arrivals" class="imgNArrHP">
+            
+            <div class="overlayImg-NArr">
+                <div class="TextImg-NArr ">New Arrivals</div>
+            </div>
+
+    </div>
+
+
+    <div class="bigBoxHB">
+
+        <div class="boxHB"> Best Selling </div>
+
+            <a href="#" class="arrowB" style="margin-right: 1%;">&laquo;</a>
+
+            <div class="prdROW">
+
+                <div class="bigBoxProduct">
+                    <img class="bigBoxImg" src="img/vitamin c.png" alt="Product"> <p class="bigBoxText">Sundown Naturals, Vitamin C, 1,000 mg, 300 Caplets.</p>
+                </div>
+        
+                <div class="bigBoxProduct">
+                    <img class="bigBoxImg" src="img/Apixaban.png" alt="Product"> <p class="bigBoxText">Eliquis Apixaban 5 mg 60 Comprimidos Recubierto.</p>
+                </div>
+        
+                <div class="bigBoxProduct">
+                    <img class="bigBoxImg" src="img/Eye Creme.png" alt="Product"> <p class="bigBoxText">Banana Bright Eye Crème.</p>
+                </div>
+
+            </div>
+
+            <a href="#" class="arrowB" style="margin-left: 1%;">&raquo;</a>
+
+        
+    </div>
+
+
+    <div class="bigBoxHB">
+
+        <div class="boxHB"> Recommanded for you </div>
+
+        <a href="#" class="arrowB" style="margin-right: 1%;">&laquo;</a>
+
+            <div class="prdROW">
+
+        
+                <div class="bigBoxProduct">
+                    <img class="bigBoxImg" src="img/Bioderma .png" alt="Product"> <p class="bigBoxText">Bioderma Sensibio Crème légère hydratante pour le visage apaisante pour peaux sensibles, 40 ml.</p>
+                </div>
+        
+                <div class="bigBoxProduct">
+                    <img class="bigBoxImg" src="img/panadol night.png" alt="Product"> <p class="bigBoxText">Panadol Night  used to give temporary relief of pain when associated with sleeping difficulty.</p>
+                </div>
+        
+                <div class="bigBoxProduct">
+                    <img class="bigBoxImg" src="img/collagen.png" alt="Product"> <p class="bigBoxText">Youtheory, Collagen, 6,000 mg, 290 Tablets.</p>
+                </div>
+            
+            </div>
+
+        <a href="#" class="arrowB" style="margin-left: 1%;">&raquo;</a>
+    
+    </div>
+
+
+<div class="trendBoxTitle">trending now!!!! </div>
+    
+
+<div class="trendBox">
+
+    <div class="trendBoxImg"> <img src="img/skincare model.jpg"> </div>
+
+
+    <div class="trendProductsBox">
+
+        
+        <div class="trendProductsRow">
+
+            <div class="trendProImg"> <img src="img/mebo.png" alt="Product"> </div>
+
+            <div class="trendBoxText"> <p class="trendP"> Mebo S Burns & Wounds Oint 30g.</p> </div>
+
+            <div class="trendProImg"> <img src="img/colic.png" alt="Product"> </div>
+
+            <div class="trendBoxText"> <p class="trendP"> Colic Calm Herbal Blend 59ml. </p> </div>
+
+        </div>
+
+        <div class="trendProductsRow">
+
+            
+            <div class="trendBoxText"> <p class="trendP"> Doctor's Best, Natto-Serra, 90 Veggie Caps. </p> </div>
+
+            <div class="trendProImg"> <img src="img/natto.png" alt="Product"> </div>
+
+            <div class="trendBoxText"> <p class="trendP"> NIVEA Fresh Blends Apriot Shower Gel 300 ml. </p> </div>
+
+            <div class="trendProImg"> <img src="img/nivea.png" alt="Product"> </div>
+
+        </div>
+
+        <div class="trendProductsRow">
+
+            <div class="trendProImg"> <img src="img/silent night.png" alt="Product"> </div>
+
+            <div class="trendBoxText"> <p class="trendP"> Nature's Way, Silent Night, 100 Vegan Capsules. </p> </div>
+
+            <div class="trendProImg"> <img src="img/vichy.png" alt="Product"> </div>
+
+            <div class="trendBoxText"> <p class="trendP"> Nature's Way, Silent Night, 100 Vegan Capsules. </p> </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+    <div class="footer">
+        <p>Pharmacy is the clinical health science that links medical science with chemistry and it is charged with the discovery, production, disposal, safe and effective use, and control of medications and drugs.</p>
+    </div>
+
+</body>
+</html>

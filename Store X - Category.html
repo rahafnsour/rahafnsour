@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+    <title>Store X - Category</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/logo.png">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="headBar">
+       
+        
+        <div class="storeName">  Store X   </div>
+
+        <div style="margin-top: 5%;">
+        
+            <div style="display:-webkit-inline-box;">
+                
+                <div class="category"> Skincare </div>
+                <div class="category"> Supplements </div>
+                <div class="category"> Babies essentials </div>
+                <div class="category"> Medical devices </div>
+                <div class="category"> HomePage </div>
+            
+            </div>
+
+            <div class="iconCol">
+
+                <div class="icon"> <i class="glyphicon glyphicon-user"></i> </div>
+                <div class="icon"> <i class="glyphicon glyphicon-shopping-cart"></i> </div> 
+                
+                <div id="myOverlay" class="searchBnOverlay">
+                    <span class="searchClose" onclick="closeSearch()" title="Close searchBnOverlay">x</span>
+                    <div class=".searchOverlay-content">
+                    <form action="/action_page.php">
+                        <input class="searchInput" type="text" placeholder="Search.." name="search">
+                        <button class="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    </div>
+                </div>
+                
+            <div class="icon"> <button class="searchBtn" onclick="openSearch()"><i class="glyphicon glyphicon-search"></i></button> </div>
+            
+                <script>
+                    function openSearch() {
+                    document.getElementById("myOverlay").style.display = "block";
+                    }
+                    
+                    function closeSearch() {
+                    document.getElementById("myOverlay").style.display = "none";
+                    }
+                </script>
+
+            
+            </div>
+
+        </div>
+        
+        
+    </div>
+
+    <div class="videoCat">
+    
+        <video width="100%"  height= "auto" autoplay loop muted>
+        <source src="img/drugs.mp4" type="video/mp4">
+        Video.
+        </video>
+
+    </div>
+
+
+    <div style="margin-left: 4%; margin-right: 4%; margin-top: 2%; margin-bottom: 5%;">
+
+        <select name="sub" class="subC">
+            <option value="All">All sub-categories</option>
+            <option value="Antacid">Antacid</option>
+            <option value="Ant"> Ant flatulent</option>
+            <option value="Antifungal">Antifungal</option>
+            <option value="Antiemetic">Antiemetic</option>
+            <option value="Ophthalmic">Ophthalmic</option>
+            <option value="Antiquaries">Antiquaries</option>
+            <option value="Topical">Topical</option>
+          </select>
+
+    </div>
+
+    <div class="detailsText">
+        <strong>Category details:</strong>
+        <p>Drugs (Category name); Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ipsum. Laborum unde blanditiis sunt fuga sit perferendis sint repudiandae sapiente, labore aut mollitia facere, molestias, velit temporibus! Pariatur, molestiae culpa?</p>
+    </div>
+
+    <div class="productBbox">
+
+        <div class="productRow">
+
+            <div class="product">
+
+                <div class="productName">ATACAND</div>
+                <div class="productImg"> <img src="img/atacand.png" alt="Product."> </div>
+                <div class="productText">Candesartan is used to treat high blood pressure.</div>
+
+            </div>
+
+            <div class="product">    
+            
+                <div class="productName">Riabal</div>
+                <div class="productImg"> <img src="img/riabal.png" alt="Product."> </div>
+                <div class="productText">Paracetamol, Prifinium Bromide, 20 Tablets. </div>
+            
+            </div>
+
+            <div class="product">
+
+                <div class="productName">Aspirin</div>
+                <div class="productImg"> <img src="img/aspirin.png" alt="Product."> </div>
+                <div class="productText"> Aspirin is used to reduce fever and relieve mild to moderate pain from conditions. </div>
+
+            </div>
+
+        </div>
+
+        <div class="productRow">
+
+            <div class="product">
+                    
+                <div class="productName">BLOPRESS</div>
+                <div class="productImg"> <img src="img/blopress.png" alt="Product."> </div>
+                <div class="productText">Candesartan is used to treat high blood pressure.</div>
+
+            </div>
+
+            <div class="product">
+                    
+                <div class="productName">Aditor</div>
+                <div class="productImg"> <img src="img/aditor.png" alt="Product."> </div>
+                <div class="productText">Aditor 20 mg Tablet 30'S</div>
+
+            </div>
+
+            <div class="product">
+                    
+                <div class="productName"> Vastor </div>
+                <div class="productImg"> <img src="img/vastor.png" alt="Product."> </div>
+                <div class="productText"> Vastor 20mg Tablets 30's. </div>
+
+            </div>
+
+        </div>
+
+        <div class="productRow">
+
+            <div class="product">
+                    
+                <div class="productName"> Crestor </div>
+                <div class="productImg"> <img src="img/crestor.png" alt="Product."> </div>
+                <div class="productText"> Crestor is a prescription medicine used to lower LDL cholesterol. </div>
+
+            </div>
+
+            <div class="product">
+                    
+                <div class="productName"> Tylenol </div>
+                <div class="productImg"> <img src="img/tylenol.png" alt="Product."> </div>
+                <div class="productText"> Containing 500 mg of acetaminophen, help temporarily reduce fever in adults and children 12 years and older.</div>
+
+            </div>
+
+            <div class="product">
+                    
+                <div class="productName">Advil</div>
+                <div class="productImg"> <img src="img/advil .png" alt="Product."> </div>
+                <div class="productText">Advil delivers relief that's fast with strength that lasts.</div>
+
+            </div>
+
+        </div>
+
+        <div class="productRow">
+
+            <div class="product">
+                    
+                <div class="productName"> REMICADE </div>
+                <div class="productImg"> <img src="img/remicade .png" alt="Product."> </div>
+                <div class="productText"> Remicade (infliximab) is a chimeric IgG1k monoclonal antibody used to treat rheumatoid arthritis. </div>
+
+            </div>
+
+            <div class="product">
+                    
+                <div class="productName"> HUMIRA </div>
+                <div class="productImg"> <img src="img/humira.png" alt="Product."> </div>
+                <div class="productText"> HUMIRA is a prescription medicine used to reduce signs and symptoms. </div>
+
+            </div>
+
+            <div class="product">
+                    
+                <div class="productName">Deflat</div>
+                <div class="productImg"> <img src="img/deflat.png" alt="Product."> </div>
+                <div class="productText"> Deflat 40 mg/ 1ml Drops. 120 mg Chewable Tablets.  </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="pnBut">
+
+        <a href="#" class="previous">&laquo; Previous</a>
+        <a href="#" class="next">Next &raquo;</a>
+
+    </div>
+
+    <div class="footer">
+        <p>Pharmacy is the clinical health science that links medical science with chemistry and it is charged with the discovery, production, disposal, safe and effective use, and control of medications and drugs.</p>
+    </div>
+
+</body>
+
+</html>
+

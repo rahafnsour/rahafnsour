@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Store X - Best Selling</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/logo.png">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="headBar">
+     
+        
+        <div class="storeName">  Store X   </div>
+
+        <div style="margin-top: 5%;">
+        
+            <div style="display:-webkit-inline-box;">
+                
+                <div class="category"> Drugs </div>
+                <div class="category"> Skincare </div>
+                <div class="category"> Supplements </div>
+                <div class="category"> Babies essentials </div>
+                <div class="category"> Medical devices </div>
+                <div class="category"> HomePage </div>
+            
+            </div>
+
+            <div class="iconCol">
+
+                <div class="icon"> <i class="glyphicon glyphicon-user"></i> </div>
+                <div class="icon"> <i class="glyphicon glyphicon-shopping-cart"></i> </div> 
+                
+                <div id="myOverlay" class="searchBnOverlay">
+                    <span class="searchClose" onclick="closeSearch()" title="Close searchBnOverlay">x</span>
+                    <div class=".searchOverlay-content">
+                    <form action="/action_page.php">
+                        <input class="searchInput" type="text" placeholder="Search.." name="search">
+                        <button class="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    </div>
+                </div>
+                
+            <div class="icon"> <button class="searchBtn" onclick="openSearch()"><i class="glyphicon glyphicon-search"></i></button> </div>
+            
+                <script>
+                    function openSearch() {
+                    document.getElementById("myOverlay").style.display = "block";
+                    }
+                    
+                    function closeSearch() {
+                    document.getElementById("myOverlay").style.display = "none";
+                    }
+                </script>
+
+            
+            </div>
+
+        </div>
+
+        
+    </div>
+
+    <div style="display: flexbox; margin-bottom: 15%;">
+
+        <div class="BSimg1">
+
+            <img src="img/pumpers.png">
+
+        </div>
+
+        <div class="BSimg2">
+
+            <img src="img/ordina.png">
+
+        </div>
+
+        <p class="BSimg1text"> <em> <strong> Title  </strong></em> <br> ipsum dolor sit amet consectetur adipisicing elit. Ad ratione aliquam, quam similique sint, debitis commodi laborum, delectus dolores quas possimus beatae optio ab tenetur. Doloremque exercitationem quo nesciunt possimus.</p>
+
+    </div>
+
+    <div class="BSmonth"> Best selling this month </div>
+
+    <div class="bigBoxHB">
+    
+        <div class="prdROWBS">
+
+            
+            <a href="#" class="arrowB">&laquo;</a>
+    
+                <div class="bigBoxProduct">
+                    <img class="bigBoxImg" src="img/vitamin c.png" alt="Product"> <p class="bigBoxText">Sundown Naturals, Vitamin C, 1,000 mg, 300 Caplets.</p>
+                </div>
+        
+                <div class="bigBoxProduct">
+                    <img class="bigBoxImg" src="img/Apixaban.png" alt="Product"> <p class="bigBoxText">Eliquis Apixaban 5 mg 60 Comprimidos Recubierto.</p>
+                </div>
+        
+                <div class="bigBoxProduct">
+                    <img class="bigBoxImg" src="img/Eye Creme.png" alt="Product"> <p class="bigBoxText">Banana Bright Eye Crème.</p>
+                </div>
+            
+            <a href="#" class="arrowB">&raquo;</a>
+        
+        </div>
+    
+    </div>
+
+        <div class="BSmonth" style="margin-top: 4%;"><div style="text-align: left; margin-left: 5%;"> Best review for the month  </div> 
+    
+    </div>
+
+    <div class="BRbigBox">
+
+        <div class="BRbigBoxImg">
+
+            <img src="img/mega.png" alt="Product.">
+
+        </div>
+
+        <div class="BRbigBoxText"> <em style="text-align: center;">MegaFood One Daily</em> <p style="text-align: center;">Supports Overall Health - Multivitamin with B Vitamins and Food Blend - Gluten-Free, Vegetarian, and Made without Dairy - 180 Tabs. </p> 
+            <strong>About this item:</strong>
+                <ul>
+                    <li>Supports Optimal Health: Nourish your health and well-being with our signature once-daily multi designed to help you feel your best with a blend of vitamins and minerals.
+                    <li> For Everyone: Made with B vitamins to help support cellular energy and 400 IU of vitamin D to help maintain already healthy bones; Promotes normal immune function with vitamins C, E and beta carotene.
+                    <li>Take Any Time Of Day: Take 1 tablet any time of day with a beverage, even on an empty stomach; Includes organic carrots, oranges, broccoli and added nutrients.
+                </ul>
+        </div>
+
+    </div>
+
+
+    <div class="bigBoxHB">
+
+        <div class="BSmonth"> Recommanded for you </div>
+    
+        <div class="prdROWBS">
+
+            <a href="#" class="arrowB">&laquo;</a>
+    
+                <div class="bigBoxProduct">
+                    <img class="bigBoxImg" src="img/Bioderma .png" alt="Product"> <p class="bigBoxText">Bioderma Sensibio Crème légère hydratante pour le visage apaisante pour peaux sensibles, 40 ml.</p>
+                </div>
+        
+                <div class="bigBoxProduct">
+                    <img class="bigBoxImg" src="img/panadol night.png" alt="Product"> <p class="bigBoxText">Panadol Night  used to give temporary relief of pain when associated with sleeping difficulty.</p>
+                </div>
+        
+                <div class="bigBoxProduct">
+                    <img class="bigBoxImg" src="img/collagen.png" alt="Product"> <p class="bigBoxText">Youtheory, Collagen, 6,000 mg, 290 Tablets.</p>
+                </div>
+
+            <a href="#" class="arrowB">&raquo;</a>
+        
+        </div>
+    
+    </div>
+
+
+    <div class="footer">
+        <p>Pharmacy is the clinical health science that links medical science with chemistry and it is charged with the discovery, production, disposal, safe and effective use, and control of medications and drugs.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Store X - Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/logo.png">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="headBar">
+     
+        
+        <div class="storeName">  Store X   </div>
+
+        <div style="margin-top: 5%;">
+        
+            <div style="display:-webkit-inline-box;">
+                
+                <div class="category"> Drugs </div>
+                <div class="category"> Skincare </div>
+                <div class="category"> Supplements </div>
+                <div class="category"> Babies essentials </div>
+                <div class="category"> Medical devices </div>
+                <div class="category"> HomePage </div>
+            
+            </div>
+
+            <div class="iconCol">
+
+                <div class="icon"> <i class="glyphicon glyphicon-user"></i> </div>
+             
+                
+                <div id="myOverlay" class="searchBnOverlay">
+                    <span class="searchClose" onclick="closeSearch()" title="Close searchBnOverlay">x</span>
+                    <div class=".searchOverlay-content">
+                    <form action="/action_page.php">
+                        <input class="searchInput" type="text" placeholder="Search.." name="search">
+                        <button class="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    </div>
+                </div>
+                
+            <div class="icon"> <button class="searchBtn" onclick="openSearch()"><i class="glyphicon glyphicon-search"></i></button> </div>
+            
+                <script>
+                    function openSearch() {
+                    document.getElementById("myOverlay").style.display = "block";
+                    }
+                    
+                    function closeSearch() {
+                    document.getElementById("myOverlay").style.display = "none";
+                    }
+                </script>
+            
+            </div>
+
+        </div>
+
+        
+    </div>
+
+
+    <div class="cartContainer">
+
+        <div class="cartContainer-head">
+            <h3 class="cartContainer-title">Shopping Cart</h3>
+            <h5 class="cartRemove">Remove all</h5>
+        </div>
+
+        <div class="cartItem-row">
+        
+            <div class="cartImg">
+                <img src="img/advil .png">
+            </div>
+
+            <div class="itemInfo">
+                <h1 class="itemName">Advil</h1>
+                <h3 class="itemText">200mg</h3>
+            </div>
+            
+            <div class="cartCounter">
+            
+                <div class="counterBtn">+</div>
+                <div class="cart-count">2</div>
+                <div class="counterBtn">-</div>
+            
+            </div>
+
+            <div class="cartPrices">
+
+                <div class="itemPrice">$2.99</div>
+                <div class="removeItem"><u>Remove</u></div>
+
+            </div>
+
+        </div>
+
+        <div class="cartItem-row">
+        
+            <div class="cartImg">
+                <img src="img/aspirin.png">
+            </div>
+
+            <div class="itemInfo">
+                <h1 class="itemName">Aspirin</h1>
+                <h3 class="itemText">50 Tablet</h3>
+            </div>
+            
+            <div class="cartCounter">
+            
+                <div class="counterBtn">+</div>
+                <div class="cart-count">4</div>
+                <div class="counterBtn">-</div>
+            
+            </div>
+
+            <div class="cartPrices">
+
+                <div class="itemPrice">$1.99</div>
+                <div class="removeItem"><u>Remove</u></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Pharmacy is the clinical health science that links medical science with chemistry and it is charged with the discovery, production, disposal, safe and effective use, and control of medications and drugs.</p>
+    </div>
+
+
+</body>
+</html>
